@@ -2,13 +2,89 @@ body {
   font-family: sans-serif;
 }
 
+/*inputタグ*/
+input {
+  /*角を丸くする*/
+  border-radius: 16px;
+  /*枠線を削除*/
+  border: none;
+  /*内側の余白（高さ,幅）*/
+  padding: 6px 16px;
+  /*フォーカスした場合の線を削除*/
+  outline: none;
+}
+
+/*ボタンタグ*/
+button {
+  border-radius: 16px;
+  border: none;
+  padding: 6px 16px;
+}
+
+/*ボタンにカーソルをあてた（ホバー）時*/
+button:hover {
+  /*背景色*/
+  background-color: #ff7fff;
+  /*文字色*/
+  color: #fff;
+  /*マウスポインタの表示切り替え*/
+  cursor: pointer;
+}
+
+/*リストタグ*/
+li {
+  margin-right: 8px;
+}
+
+/*入力エリアクラス*/
 .input-area {
-  background-color: #ffff99;
+  background-color: #79f0b8;
+  /*幅*/
+  width: 400px;
+  /*高さ*/
+  height: 30px;
+  /*内側の余白*/
+  padding: 8px;
+  /*外側の余白*/
+  margin: 8px;
+  /*角を丸くする*/
+  border-radius: 8px;
 }
-
+/*未完了エリアクラス*/
 .incomplete-area {
-  background-color: #ffff99;
+  background-color: #ba1cf8;
+  width: 400px;
+  min-height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+/*完了エリアクラス*/
+.complete-area {
+  background-color: #ffffe0;
+  width: 400px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
 }
 
-.complete-area {
+/*タイトルクラス*/
+.tytle {
+  /*文字の並び*/
+  text-align: center;
+  /*上の余白をなくす*/
+  margin: 0px;
+  /*太字*/
+  font-weight: bold;
+  /*色身を落とす*/
+  color: #666;
+}
+
+.list-row {
+  /*横並びにする*/
+  display: flex;
+  /*文字部分を中央に配置*/
+  align-items: center;
+  /*複数並んだ場合に縦の余白を作る*/
+  padding-bottom: 4px;
 }
